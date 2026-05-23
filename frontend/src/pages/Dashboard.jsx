@@ -47,7 +47,7 @@ function Dashboard() {
   const fetchTestCases = async () => {
 
     const res = await axios.get(
-      "http://127.0.0.1:8000/testcases"
+      "https://testforgeai-backend.onrender.com/testcases",
     );
 
     setTestcases(res.data);

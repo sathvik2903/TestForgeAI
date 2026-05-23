@@ -13,7 +13,7 @@ function Login() {
     try {
 
       const res = await axios.post(
-        "http://127.0.0.1:8000/login",
+        "https://testforgeai-backend.onrender.com/login",
         formData
       );
 
@@ -97,19 +97,42 @@ function Login() {
           />
 
           <button
-            onClick={login}
-            className="
-              w-full
-              bg-blue-600
-              hover:bg-blue-500
-              p-3
-              rounded-xl
-              font-bold
-              transition-all
-            "
-          >
-            Login
-          </button>
+  onClick={login}
+  className="
+    w-full
+    bg-blue-600
+    hover:bg-blue-500
+    p-3
+    rounded-xl
+    font-bold
+    transition-all
+  "
+>
+  Login
+</button>
+
+<p className="
+  mt-4
+  text-center
+  text-slate-300
+">
+
+  Don’t have an account?
+
+  <span
+    onClick={() =>
+      window.location.href = "/signup"
+    }
+    className="
+      text-blue-400
+      cursor-pointer
+      ml-2
+    "
+  >
+    Signup
+  </span>
+
+</p>
 
         </div>
 
