@@ -19,8 +19,10 @@ router = APIRouter()
 
 # ================= COHERE =================
 
+import os
+
 co = cohere.ClientV2(
-    "aO28RpD2lrgCB6DLYIXYWuNXetIishEvcKRsXzB5"
+    os.getenv("COHERE_API_KEY")
 )
 
 # ================= MODEL =================
