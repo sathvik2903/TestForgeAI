@@ -1,0 +1,27 @@
+# ================= PYTHON =================
+
+backend/venv/
+
+__pycache__/
+
+*.pyc
+
+# ================= NODE =================
+
+frontend/node_modules/
+
+# ================= ENV =================
+
+.env
+
+# ================= REPORTS =================
+
+tests/report.html
+
+tests/*.png
+
+# ================= OS FILES =================
+
+.DS_Store
+
+Thumbs.db
